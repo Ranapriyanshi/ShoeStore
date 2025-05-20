@@ -57,7 +57,7 @@ const sampleShoes = [
       "An iconic sneaker for everyday style. Timeless look with unmatched versatility.",
   },
   {
-    name: "ZoomX Vaporfly Next%",
+    name: "ZoomX Vaporfly Next",
     brand: "Nike",
     price: 250,
     rating: 4.9,

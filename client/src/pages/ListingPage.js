@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ShoeCard from "../componenets/ShoeCard";
 import { useNavigate } from "react-router-dom";
+// import "dotenv/config";
 
 const ListingPage = () => {
   const [shoes, setShoes] = useState([]);

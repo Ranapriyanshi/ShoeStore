@@ -14,9 +14,16 @@ const ShoeCard = ({ shoe, onToggleCompare, isSelected, showCheckbox }) => {
         borderRadius: "10px",
         boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
         cursor: showCheckbox ? "pointer" : "default",
+        display: "flex",
+
       }}
     >
-      <img src={shoe.image} alt={shoe.name} style={{ width: "100%" }} />
+      <img
+        src={`/shoesImages/${shoe.name}.jpeg`}
+        alt={shoe.name}
+        style={{ width: "200px", height: "200px", objectFit: "fit" }}
+      />
+      {/* console.log(shoe.name); */}
       <div
         style={{
           padding: "10px",
