@@ -11,7 +11,7 @@ const ListingPage = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/shoes")
+      .get(process.env.REACT_APP_API_URL + "/shoes")
       .then((res) => setShoes(res.data))
       .catch((err) => console.error(err));
   }, []);
