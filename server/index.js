@@ -5,7 +5,9 @@ require("dotenv").config();
 
 const app = express();
 app.use(cors({
-  origin: process.env.CORS_ORIGINS.split(',') || []
+  origin: process.env.CORS_ORIGINS.split(',') || [],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
 }));
 app.use(express.json());
 
