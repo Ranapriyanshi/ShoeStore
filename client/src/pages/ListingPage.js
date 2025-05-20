@@ -64,26 +64,41 @@ const ListingPage = () => {
         </button>
       ) : (
         <>
-          <button
-            style={{
-              padding: "9px 18px",
-              border: "1px solid black",
-              cursor: "pointer",
-              fontSize: "20px",
-              borderRadius: "25px",
-            }}
-            onClick={handleCompareNow}
-            disabled={selectedIds.length < 2}
-          >
-            Compare Now ({selectedIds.length}/3)
-          </button>
-          <button onClick={handleCancelCompare} style={{ marginLeft: 10 }}>
-            Cancel
-          </button>
+          <div style={{ display: "flex", gap: "10px", marginTop: "20px" }}>
+            <button
+              style={{
+                padding: "9px 18px",
+                border: "1px solid black",
+                cursor: "pointer",
+                fontSize: "20px",
+                borderRadius: "25px",
+                backgroundColor: "white",
+              }}
+              onClick={handleCompareNow}
+              disabled={selectedIds.length < 2}
+            >
+              Compare Now ({selectedIds.length}/3)
+            </button>
+            <button onClick={handleCancelCompare} style={{ marginLeft: 10 }}>
+              Cancel
+            </button>
+          </div>
+          <p>
+            <i>*Select more than 2 shoes to compre</i>
+          </p>
         </>
       )}
 
-      <div style={{ display: "flex", flexWrap: "wrap", marginTop: 20 }}>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(3, 1fr)", // force 3 columns on desktop
+          gap: "80px",
+          marginTop: "50px",
+          width: "100%",
+          // maxWidth: "1200px",
+        }}
+      >
         {shoes.map((shoe) => (
           <ShoeCard
             key={shoe._id}

@@ -4,7 +4,6 @@ import { Typewriter } from "react-simple-typewriter";
 const Intro = () => {
   return (
     <div
-      div
       style={{
         width: "100%",
         display: "flex",

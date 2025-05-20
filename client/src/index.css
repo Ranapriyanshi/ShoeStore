@@ -8,3 +8,26 @@ body {
   background-image: radial-gradient(#ccc 1px, transparent 1px);
   background-size: 20px 20px;
 }
+
+
+.tag{
+  
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin: 2px;
+  display: inline-block;
+}
+
+#sale{
+  background-color: #f5f4d3;
+  border: 1px solid #b4b45b;
+}
+
+#new{
+  background-color: #d3f5f4;
+  border: 1px solid #5bb4b4;
+}
+#featured{
+  background-color: #f4d3f5;
+  border: 1px solid #b45bb4;
+}

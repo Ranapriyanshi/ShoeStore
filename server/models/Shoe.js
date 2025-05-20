@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+  const mongoose = require("mongoose");
 
 const ShoeSchema = new mongoose.Schema({
   name: String,
@@ -7,6 +7,8 @@ const ShoeSchema = new mongoose.Schema({
   rating: Number,
   image: String,
   features: [String],
+  saleStatus: String,
+  description: String,
 });
 
 module.exports = mongoose.model("Shoe", ShoeSchema);
